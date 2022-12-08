@@ -1,0 +1,4 @@
+@mixin sombras($color-fuente1){
+    color:  $color-fuente1;
+    text-shadow: (2px 2px 2px white);
+}

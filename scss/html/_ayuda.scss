@@ -1,0 +1,74 @@
+.preguntas{
+    margin: 20px;
+ 
+h1{
+background-color: rgb(173, 229, 255);
+text-align: center;
+color: rgb(255, 134, 154);
+text-shadow: (4px 1px 1px rgb(255, 255, 255));
+padding: 45px;
+animation-name: preguntas;
+animation-duration: 2s;
+}
+
+@keyframes preguntas{
+    0%{
+        opacity: 0;
+        margin-top: 10px;
+    }
+    
+    100%{ margin-top: 20px;}
+}
+
+h2{
+text-align: center; 
+border-top-style: solid;
+border-color: rgb(255, 134, 154);
+margin-top: 30px;
+}
+
+ .metodos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    animation-name: preguntas;
+    animation-duration: 2s;
+
+img{
+    width: 130px;
+    background-color: rgb(255, 193, 203);
+    padding: 20px;
+    box-shadow: (6px 3px 4px rgb(255, 193, 203));
+}
+}
+
+a{
+    text-decoration: none;
+    color: rgb(235, 90, 114);
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

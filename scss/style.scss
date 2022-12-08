@@ -1,0 +1,17 @@
+//utilidades
+
+@import "utilidades/variables";
+@import "utilidades/mixin";
+
+
+
+//páginas 
+@import "html/_index.scss";
+@import "html/ayuda.scss";
+@import "html/contacto.scss";
+@import "html/nov.scss";
+@import "html/pro.scss";
+
+h1{
+    @include sombras($color-fuente1)
+}
