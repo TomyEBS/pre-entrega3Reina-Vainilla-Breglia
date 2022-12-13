@@ -92,6 +92,9 @@ body {
 .derechos-2 {
   display: none; }
 
+.red-social2 {
+  display: none; }
+
 @media only screen and (max-width: 575px) {
   body {
     padding-bottom: 150px; }
@@ -111,7 +114,14 @@ body {
     color: whitesmoke;
     position: absolute;
     bottom: 0;
-    width: 100%; } }
+    width: 100%; }
+  .red-social2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    .red-social2 img {
+      width: 50px;
+      opacity: 0.5; } }
 
 .preguntas {
   margin: 20px; }
