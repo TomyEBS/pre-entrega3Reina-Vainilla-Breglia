@@ -4,17 +4,33 @@ body{
     padding: 0;
     position: relative;
     padding-bottom: 30rem;
-     
+    
 nav{
     background-color: rgb(255, 134, 154);
 
-img{
+.nav-item{
+   a{
+      color: white;
+      font-size: large;
+      }
+
+      a:hover{
+         color: whitesmoke;
+         border-bottom: 2px;
+         border-bottom-color: white;
+         border-bottom-style: solid;
+      }
+   }
+}
+
+.logo{
 width: 120px;
 }
 }
 
 .titulo{
 background-color:  $color1;
+font-family: inherit;
 display: flex;
 flex-direction: row;
 justify-content: space-evenly;
@@ -28,9 +44,9 @@ padding: 5rem;
     color: white;
     text-shadow: (2px 2px 1px rgb(192, 147, 154));
     font-size: larger;
-}
+   }
  
-}
+
 
 .button{
     border-radius: 3px;
@@ -116,10 +132,10 @@ color: whitesmoke;
 .red-social2{
    display: none;
 }
-
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 767px) and (min-width: 280px){
  body{
    padding-bottom: 150px;
+   overflow-x: hidden;
  }
 .titulo img{
    display:none !important;
@@ -131,7 +147,7 @@ color: whitesmoke;
 
 
 .button{
-margin-left: 25%;
+   margin-left: 27%;
 }
 
 .pie-pagina{
@@ -153,16 +169,113 @@ width: 100%;
 .red-social2{
    display: flex;
    flex-direction: column;
+   gap: 5px;
    align-items: flex-end;
+   position: fixed;
+   bottom: 50px;
+   right: 0;
 
 
    img{
-      width: 50px;
+      width: 45px;
       opacity: 0.5;
     
    }
 }
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+   body{
+      padding-bottom: 400px;
+   }
+   
+   .carousel-item{
+      img{
+         width: 400px;
+         margin-left: 10px;
+      }
+   }
+   .button{
+      margin-left: 35%;
+   }
 
+   .pie-pagina{
+     display: none;
+   }
 
+   .derechos-2{
+      display: block;
+      background-color:  rgb(229, 182, 190);
+   padding: 15px 10px;
+   text-align: center;
+   color: whitesmoke;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   }
+   
+   .red-social2{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      align-items: flex-end;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+   
+   
+      img{
+         width: 45px;
+         opacity: 0.5;
+       
+      }
+   }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px){
+   body{
+      padding-bottom: 300px;
+   }
+   
+   .carousel-item{
+      img{
+         width: 550px;
+         margin-left: 10px;
+      }
+   }
+   .button{
+      margin-left: 40%;
+   }
+
+   .pie-pagina{
+     display: none;
+   }
+
+   .derechos-2{
+      display: block;
+      background-color:  rgb(229, 182, 190);
+   padding: 15px 10px;
+   text-align: center;
+   color: whitesmoke;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   }
+   
+   .red-social2{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      align-items: flex-end;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+   
+   
+      img{
+         width: 45px;
+         opacity: 0.5;
+       
+      }
+   }
 }
